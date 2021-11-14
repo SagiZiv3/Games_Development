@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Door : MonoBehaviour
 {
@@ -7,28 +6,23 @@ public class Door : MonoBehaviour
     [SerializeField] private AudioClip openSfx, closeSfx;
     [SerializeField] private AudioSource audioSource;
     private int counter = 0;
+    private static readonly int IsOpenAnimatorVariable = Animator.StringToHash("is_open");
 
-    private void Start()
-    {
-        GetComponent<Collider>().isTrigger = true;
-    }
 
-    private void OnTriggerEnter(Collider other)
+    public void TransformEntered(Transform _)
     {
         counter++;
-        animator.SetBool("is_open", true);
+        animator.SetBool(IsOpenAnimatorVariable, true);
         audioSource.Stop();
         audioSource.PlayOneShot(openSfx);
     }
 
-    private void OnTriggerExit(Collider other)
+    public void TransformExited(Transform _)
     {
         counter -= 1;
-        if (counter == 0)
-        {
-            animator.SetBool("is_open", false);
-            audioSource.Stop();
-            audioSource.PlayOneShot(closeSfx);
-        }
+        if (counter != 0) return;
+        animator.SetBool(IsOpenAnimatorVariable, false);
+        audioSource.Stop();
+        audioSource.PlayOneShot(closeSfx);
     }
 }

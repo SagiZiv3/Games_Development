@@ -9,7 +9,7 @@ public class PayingZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.name == "Player")
         {
             sellerAnimator.ResetTrigger("Stop_Talking");
             sellerAnimator.SetTrigger("Talking");
@@ -18,7 +18,7 @@ public class PayingZone : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.name == "Player")
         {
             sellerAnimator.ResetTrigger("Talking");
             sellerAnimator.SetTrigger("Stop_Talking");

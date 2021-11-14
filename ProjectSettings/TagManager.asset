@@ -9,6 +9,10 @@ TagManager:
   - Shelf
   - Box
   - Fluid
+  - weapon
+  - Team1
+  - Team2
+  - Grenade
   layers:
   - Default
   - TransparentFX
@@ -21,9 +25,9 @@ TagManager:
   - PostProcessing
   - Path
   - Product
-  - 
-  - 
-  - 
+  - Characters
+  - Guns
+  - Grenades
   - 
   - 
   - 

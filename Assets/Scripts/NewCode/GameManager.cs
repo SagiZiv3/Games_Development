@@ -120,7 +120,7 @@ namespace NewCode
 
         private void OnPlayerWon()
         {
-            gameOverLabel.SetText("!GAME OVER!\nYOU defeated all the other teams");
+            gameOverLabel.SetText("!YOU WON!\nYOU defeated all the other teams");
             gameOverLabel.enabled = true;
             replayText.enabled = true;
         }

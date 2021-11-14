@@ -7354,7 +7354,7 @@ MonoBehaviour:
   onHealthChanged:
     m_PersistentCalls:
       m_Calls: []
-  maxHealth: 2250
+  maxHealth: 225
   updatesViewer: {fileID: 1215037361}
 --- !u!114 &968763342
 MonoBehaviour:

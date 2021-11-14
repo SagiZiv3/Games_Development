@@ -7,7 +7,7 @@ OcclusionCullingSettings:
   m_OcclusionBakeSettings:
     smallestOccluder: 5
     smallestHole: 0.25
-    backfaceThreshold: 35
+    backfaceThreshold: 100
   m_SceneGUID: 9fc0d4010bbf28b4594072e72b8655ab
   m_OcclusionCullingData: {fileID: 36300000, guid: 23e5f8fa448213e4d8fdcd902d5a7451,
     type: 2}
@@ -496,7 +496,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3590
+  m_Name: pb_Mesh-128650
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -793,7 +793,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-11330
+  m_Name: pb_Mesh-136548
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3388,6 +3388,7 @@ GameObject:
   - component: {fileID: 532219272}
   - component: {fileID: 532219271}
   - component: {fileID: 532219270}
+  - component: {fileID: 532219273}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -3453,6 +3454,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!182 &532219273
+WindZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532219269}
+  m_Enabled: 1
+  m_Mode: 0
+  m_Radius: 20
+  m_WindMain: 0.5
+  m_WindTurbulence: 1.5
+  m_WindPulseMagnitude: 0.3
+  m_WindPulseFrequency: 0.01
 --- !u!4 &542259020 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 477680, guid: 32f9e7f1053b38c41b83321d0efbe230,
@@ -7214,7 +7229,6 @@ GameObject:
   - component: {fileID: 968763338}
   - component: {fileID: 968763337}
   - component: {fileID: 968763336}
-  - component: {fileID: 968763340}
   - component: {fileID: 968763344}
   - component: {fileID: 968763343}
   - component: {fileID: 968763342}
@@ -7312,7 +7326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968763334}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000004768371}
-  m_LocalPosition: {x: -10.158, y: 1.667, z: -34.014}
+  m_LocalPosition: {x: -10.19, y: 2, z: -34.09}
   m_LocalScale: {x: 0.7, y: 1, z: 0.7}
   m_Children:
   - {fileID: 963194228}
@@ -7321,24 +7335,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
---- !u!143 &968763340
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968763334}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5000001
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &968763341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7388,7 +7384,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &968763344
 MonoBehaviour:
@@ -7429,7 +7425,7 @@ MonoBehaviour:
   weaponsHandler: {fileID: 968763335}
   itemsLayerMask:
     serializedVersion: 2
-    m_Bits: 13312
+    m_Bits: 29696
   pickableItemViewer: {fileID: 1500857766}
   maxDistance: 5
   firearmImages:
@@ -9448,7 +9444,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-19110
+  m_Name: pb_Mesh-136202
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14095,6 +14091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3409688858891891302, guid: 29172d867e7825548a4a1cf06e3a58b9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 5102642235815953631, guid: 29172d867e7825548a4a1cf06e3a58b9,
         type: 3}

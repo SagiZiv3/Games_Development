@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 6649668811781929564}
   - component: {fileID: 5723193810743946888}
   - component: {fileID: 3952813116184159800}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: PubWindow (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,8 +120,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770900764511744570}
   m_LocalRotation: {x: 0.50000054, y: 0.49999964, z: -0.49999955, w: 0.5000004}
-  m_LocalPosition: {x: -4.59, y: -4.2982, z: -5.8605}
-  m_LocalScale: {x: 0.5923706, y: 1, z: 0.5906361}
+  m_LocalPosition: {x: -4.59, y: -4.2624, z: -6.1439}
+  m_LocalScale: {x: 0.6013666, y: 1, z: 0.5977861}
   m_Children: []
   m_Father: {fileID: 8900251569686911672}
   m_RootOrder: 22
@@ -184,8 +184,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.000003, y: 0.108914234, z: 10.000003}
-  m_Center: {x: 0.000007493156, y: -0.054453745, z: 8.809276e-16}
+  m_Size: {x: 10.000002, y: 0.31347725, z: 10.000003}
+  m_Center: {x: 0.0000075327653, y: -0.1567353, z: -3.3444093e-16}
 --- !u!1 &934046462574847377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,8 +1054,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3409688858891891302}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -9103,7 +9103,7 @@ GameObject:
   - component: {fileID: 2634357360139053941}
   - component: {fileID: 8258592457049486568}
   - component: {fileID: 8481677491960052895}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: PubWindow (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9118,8 +9118,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8270487201964245665}
   m_LocalRotation: {x: 0.49999982, y: -0.50000024, z: 0.50000024, w: 0.49999982}
-  m_LocalPosition: {x: 7.45, y: -4.2982, z: -5.8545}
-  m_LocalScale: {x: 0.5923706, y: 1, z: 0.5906361}
+  m_LocalPosition: {x: 7.45, y: -4.2624, z: -5.897}
+  m_LocalScale: {x: 0.6013666, y: 1, z: 0.5977861}
   m_Children: []
   m_Father: {fileID: 8900251569686911672}
   m_RootOrder: 20
@@ -9182,8 +9182,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.000002, y: 0.038512543, z: 10.000003}
-  m_Center: {x: -2.3577676e-16, y: -0.019255381, z: 3.922537e-18}
+  m_Size: {x: 10.000002, y: 0.35740748, z: 10.000003}
+  m_Center: {x: 2.50083e-14, y: -0.17870289, z: -2.1074548e-15}
 --- !u!1 &8720813133304699888
 GameObject:
   m_ObjectHideFlags: 0

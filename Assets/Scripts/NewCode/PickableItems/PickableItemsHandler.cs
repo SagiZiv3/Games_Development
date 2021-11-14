@@ -1,4 +1,5 @@
-﻿using NewCode.PickableItems.Visualization;
+﻿using NewCode.Characters.Health;
+using NewCode.PickableItems.Visualization;
 using NewCode.Weapons;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,14 +9,14 @@ namespace NewCode.PickableItems
     public class PickableItemsHandler : MonoBehaviour
     {
         [SerializeField] private Transform eyes;
-        [SerializeField] private Characters.Health.Health health;
+        [SerializeField] private Health health;
         [SerializeField] private WeaponHandler weaponsHandler;
         [SerializeField] private LayerMask itemsLayerMask;
         [SerializeField] private PickableItemViewer pickableItemViewer;
         [SerializeField] private float maxDistance = 4.5f;
         [SerializeField] private Image[] firearmImages;
         [SerializeField] private Image grenadeImage;
-        
+
 
         public void Heal(float healAmount)
         {
@@ -48,12 +49,6 @@ namespace NewCode.PickableItems
                     pickableItemViewer.View(pickableItem);
                     if (pickableItem.CanPick())
                         pickableItem.Pickup(this);
-                }
-                else
-                {
-                    Debug.LogError(
-                        $"Item {hitInfo.collider.name} is in pickable layer but doesn't have PickableItem script on it!",
-                        hitInfo.transform);
                 }
             }
         }

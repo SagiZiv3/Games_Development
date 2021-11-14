@@ -146,7 +146,7 @@ MonoBehaviour:
   firePoint: {fileID: 1347831622}
   targetsMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 18432
   weaponEffects:
   - {fileID: 6796244890827129710}
   - {fileID: 3176131011916853806}
